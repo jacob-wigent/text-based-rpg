@@ -7,9 +7,23 @@ namespace Game
 	{
 		public void Main()
 		{
-			public float health;
-			public List<Item> inventory;
+			public Player player;
+			
+			while (true) //Player setup
+			{
+				Console.Write("Enter player name: ");
+				player.name = Console.ReadLine();
+			}
 		}
+	}
+
+	public class Player()
+	{
+		public string name;
+		public int baseHealth;
+		public int currentHealth;
+		public List<Item> inventory;
+		public int gold;
 	}
 
 	public class Item
